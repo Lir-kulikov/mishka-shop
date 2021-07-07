@@ -1,0 +1,17 @@
+:root {
+
+	--color: #000;
+	--text: #aaa;
+	--orange: #ff4a00;
+	--error: #f00;
+	--border: #aaa;
+	--bg: #fff;
+	--green: #0ead43;
+	--shadow: 0 5px 15px rgba(0,0,0,.05);
+	--shadowTop: 0 -5px 15px rgba(0,0,0,.05);
+	--transitionDefault: .3s;
+	--heightHeader: 62px;
+
+}
+
+$tablet: (min-width: 764px);

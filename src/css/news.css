@@ -1,0 +1,28 @@
+.news {
+
+	&-list {
+
+		@media ($tablet) {
+
+			display: flex;
+			flex-wrap: wrap;
+			margin: -10px;
+
+		}
+
+		&__item {
+
+			margin: 20px 0;
+
+			@media ($tablet) {
+
+				margin: 10px;
+				width: calc(50% - 20px);
+
+			}
+
+		}
+
+	}
+
+}

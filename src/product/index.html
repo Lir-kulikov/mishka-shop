@@ -1,0 +1,45 @@
+{% set title = "Купить Xiaomi Mi Pad 4 Plus 64GB/4GB Black (Черный) недорого, рассрочка, кредит, цена" %}
+
+{% set description = "Наш фирменный магазин xiaomi Mishka-Shop с радостью представляет для вас ноутбук, планшет сиаоми недорого с доставкой по городу. Только фирменная гарантия и оригинальная продукция" %}
+
+{% set ogImage = "img/product/og.jpg" %}
+{% set ogImage236 = "img/product/og-236.jpg" %}
+{% set urlPage = "product" %}
+
+{% set preloadImage = [
+	{
+		media: "(min-width: 375px)",
+		img : "/img/product/20b19e7730d19695647a78282a17b980--tablet@1x.webp"
+	},
+	{
+		media: "(max-width: 374px)",
+		img : "/img/product/20b19e7730d19695647a78282a17b980--mobile@1x.webp"
+	}
+] %}
+
+{% set breadcrumbs = ['Ноутбуки, планшеты, периферия','Планшет Lenovo TAB E10 TB-X104F 2/32GB (ZA470062UA) Black'] %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+	<article class="center">
+
+{% include "product/schema.html" %}
+{% include "_include/search.html" %}
+{% include "_include/breadcrumbs.html" %}
+{% include "product/head.html" %}
+{% include "product/img.html" %}
+{% include "product/bar.html" %}
+{% include "product/order.html" %}
+{% include "product/credit.html" %}
+{% include "product/warranty.html" %}
+{% include "product/subscribe.html" %}
+{% include "product/accompanying.html" %}
+{% include "product/tab.html" %}
+{% include "product/review.html" %}
+{% include "product/related.html" %}
+
+	</article>
+
+{% endblock %}

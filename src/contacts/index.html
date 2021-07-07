@@ -1,0 +1,292 @@
+{% set title = "Контакты" %}
+
+{% set description = "+7 (499) 110-99-38. г. Москва, Барклая д. 8 ТЦ Горбушка, пав. 240" %}
+
+{% set ogImage = "img/contacts/og.jpg" %}
+{% set ogImage236 = "img/contacts/og-236.jpg" %}
+{% set urlPage = "contacts" %}
+
+{% set breadcrumbs = ['Главная страница',title] %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+	<article class="center">
+
+{% include "_include/search.html" %}
+{% include "_include/breadcrumbs.html" %}
+
+		<h1 class="h1 visuallyhidden">
+			{{ title }}
+		</h1>
+
+{% include "_include/menu-btn.html" %}
+
+		<div class="contacts">
+
+			<div class="footer__contact">
+
+				<p class="footer__text-ico">
+
+					<span class="footer__text-ico-svg">
+						<svg width="16" height="16" viewBox="0 0 16 16">
+							<path d="M7.66 9.84a13.11 13.11 0 01-2.77-3.31l-.36-.68C4.66 5.72 5.62 4.69 6 4.13S5.8 2.8 5.8 2.8 3.67.68 3.18.25a1 1 0 00-1-.19C1.12.72.06 1.3 0 4.05c0 2.58 2 5.24 4.07 7.3C6.19 13.67 9.1 16 11.92 16s3.33-1.12 4-2.14a1 1 0 00-.19-1c-.42-.49-2.55-2.61-2.55-2.61s-.63-.76-1.33-.23c-.52.39-1.46 1.26-1.68 1.47a18.66 18.66 0 01-2.51-1.65z"/>
+						</svg>
+					</span>
+
+					<a href="tel:+74991109938">
+						+7 (499) 110-99-38
+					</a>
+
+				</p>
+
+				<p class="footer__text-ico">
+
+					<span class="footer__text-ico-svg">
+						<svg width="18" height="12" viewBox="0 0 18 12">
+							<path d="M17.75.74L9.32 7.28a.53.53 0 01-.63 0L.25.74a1.57 1.57 0 00-.25.84V10a1.58 1.58 0 001.58 1.6h14.84A1.58 1.58 0 0018 10V1.58a1.57 1.57 0 00-.25-.84z"/>
+							<path d="M16.42 0H1.58a1.56 1.56 0 00-.46.08L9 6.2 16.88.08a1.56 1.56 0 00-.46-.08z"/>
+						</svg>
+					</span>
+
+					<a href="mailto:info@mishka-shop.com">
+						info@mishka-shop.com
+					</a>
+
+				</p>
+
+				<p class="footer__text-ico footer__text-ico--space">
+
+					<span class="footer__text-ico-svg">
+						<svg width="18" height="16" viewBox="0 0 18 16">
+							<path d="M17.73 5V3a1.56 1.56 0 00-1.56-1.56H16v1.9a.52.52 0 01-1 0V.52a.52.52 0 00-1 0v.87h-3.58v1.9a.52.52 0 11-1 0V.52a.52.52 0 10-1 0v.87H4.88v1.9a.52.52 0 11-1 0V.52a.52.52 0 00-1 0v.87H1.56A1.56 1.56 0 000 2.94V5zM0 6v8.42A1.56 1.56 0 001.56 16h14.61a1.56 1.56 0 001.56-1.56V6zm5 7.2H3.88a.52.52 0 110-1H5a.52.52 0 010 1zM5 11H3.88a.52.52 0 110-1H5a.52.52 0 110 1zm0-2.2H3.88a.52.52 0 110-1H5a.52.52 0 010 1zm4.43 4.43H8.31a.52.52 0 110-1h1.11a.52.52 0 010 1zm0-2.22H8.31a.52.52 0 110-1h1.11a.52.52 0 110 1zm0-2.22H8.31a.52.52 0 110-1h1.11a.52.52 0 010 1zm4.43 4.43h-1.12a.52.52 0 010-1h1.11a.52.52 0 010 1zm0-2.22h-1.12a.52.52 0 010-1h1.11a.52.52 0 110 1zm0-2.22h-1.12a.52.52 0 010-1h1.11a.52.52 0 110 1z"/>
+						</svg>
+					</span>
+
+					График работы <br>
+					Пн-Сб: с 10:00 до 20:00 <br>
+					(по Москве) <br>
+					Воскресенье - выходной
+
+				</p>
+
+				<p class="footer__text-ico footer__text-ico--space">
+
+					<span class="footer__text-ico-svg">
+						<svg width="14" height="19" viewBox="0 0 14 19">
+							<path d="M7 0a7 7 0 00-7 7c0 3.73 6.4 12.24 6.67 12.6a.41.41 0 00.66 0C7.6 19.24 14 10.73 14 7a7 7 0 00-7-7zm0 10.71A3.71 3.71 0 1110.71 7 3.71 3.71 0 017 10.71z"/>
+						</svg>
+					</span>
+
+					Наш адрес: г. Москва, Барклая д.&nbsp;8 ТЦ&nbsp;Горбушка, пав.&nbsp;240&nbsp;-&nbsp;Пункт&nbsp;выдачи
+
+				</p>
+
+				<p class="footer__text-ico">
+
+					<span class="footer__text-ico-svg">
+						<svg width="22" height="16" viewBox="0 0 22 16">
+							<path d="M10.6 0A10.65 10.65 0 000 10.7 10.32 10.32 0 001.38 16h18.44a11.21 11.21 0 001.39-5.3A10.65 10.65 0 0010.6 0zM19 14.7H2.2a9.35 9.35 0 1117.78-4 9 9 0 01-.98 4z"/>
+							<path d="M13.6 2.84h-.14l-2.82 5.54-2.93-5.59-4.01 10.1H2.66v.81h5.68v-.81H7.21l1.13-3.15 2.3 3.96 2.21-3.96 1.12 3.15h-1.12v.81h5.63v-.81h-.98L13.6 2.84z"/>
+						</svg>
+					</span>
+
+					Метро Маяковская, Оружейный переулок, дом&nbsp;5&nbsp;-&nbsp;ШОУ&nbsp;РУМ
+
+				</p>
+
+			</div>
+
+			<div class="contacts__map">
+
+				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0e985f6c042f69544afa38eedfe4eeee0a18755f1e7943e370e40b571272ad4e&amp;source=constructor" width="100%" height="260"></iframe>
+
+			</div>
+
+			<div class="contacts__ooo">
+
+				<h2 class="h1">
+					Реквизиты онлайн-магазина “Mishka-shop” (mishka-shop.com)
+				</h2>
+
+				<dl class="contacts__ooo-list">
+
+{% set ooo = [
+
+	{
+		key   : "Наименование",
+		value : "ООО \"МИ-ТРЕЙД\""
+	},
+	{
+		key   : "Система налогообложения",
+		value : "УСН"
+	},
+	{
+		key   : "Юридический адрес",
+		value : "111524, Москва, ул Электродная, дом 14, корп. 1"
+	},
+	{
+		key   : "Фактический адрес",
+		value : "121087, Москва, Барклая д. 8, ТЦ Горбушка, пав. 240 - Пункт выдачи"
+	},
+	{
+		key   : "ОГРН",
+		value : "1177746881311"
+	},
+	{
+		key   : "ИНН",
+		value : "7720391424"
+	},
+	{
+		key   : "КПП",
+		value : "772001001"
+	},
+	{
+		key   : "Банк",
+		value : "АО \"АЛЬФА-БАНК\""
+	},
+	{
+		key   : "Расчетный счет",
+		value : "40702810802720002824"
+	},
+	{
+		key   : "Корреспондентский счет",
+		value : "30101810200000000593"
+	},
+	{
+		key   : "БИК",
+		value : "044525593"
+	},
+	{
+		key   : "Генеральный Директор",
+		value : "Смирнов Владислав Дмитриевич"
+	}
+
+] %}
+
+{% for item in ooo %}
+
+					<div class="contacts__ooo-row">
+
+						<dt>
+							{{ item.key }}
+						</dt>
+
+						<dd>
+							{{ item.value }}
+						</dd>
+
+					</div>
+
+{% endfor %}
+
+				</dl>
+
+			</div>
+
+			<form action="/" class="feedback">
+
+				<h3 class="h1 feedback__title">
+					Обратная связь
+				</h3>
+
+				<p>
+					Оставьте Ваше сообщение и контактные данныеи наши специалисты свяжутся с Вами в ближайшеерабочее время для решения Вашего вопроса
+				</p>
+
+				<div class="input-box">
+
+					<label class="input-box__label is-required" for="feedback-name">
+						Ваше имя
+					</label>
+
+					<input class="input-box__input input" id="feedback-name" placeholder="Иван" required="required">
+
+				</div>
+
+				<div class="input-box">
+
+					<label class="input-box__label is-required" for="feedback-email">
+						Ваша почта
+					</label>
+
+					<input type="email" class="input-box__input input" id="feedback-email" placeholder="ivanov@mail.ru" required="required">
+
+				</div>
+
+				<div class="input-box">
+
+					<label class="input-box__label is-required" for="feedback-phone">
+						Ваш телефон
+					</label>
+
+					<input type="tel" class="input-box__input input inputmask inputmask--phone" id="feedback-phone" placeholder="+7 ( ___ ) ___-__-__" required="required">
+
+				</div>
+
+				<div class="input-box">
+
+					<label class="input-box__label is-required" for="feedback-subject">
+						Тема вопроса
+					</label>
+
+					<div class="select-border">
+
+						<select id="feedback-subject">
+							<option value="1">Вопрос по работе магазина</option>
+							<option value="2">Вопрос по гарантии</option>
+							<option value="3">Вопрос по возврату</option>
+						</select>
+
+					</div>
+
+				</div>
+
+				<div class="input-box">
+
+					<label class="input-box__label is-required" for="feedback-text">
+						Ваше сообщение
+					</label>
+
+					<textarea class="input-box__input input" id="feedback-text" placeholder="Введите текст сообщения" required="required"></textarea>
+
+				</div>
+
+				<div class="feedback__checkbox">
+
+					<label class="checkbox-mini">
+
+						<input type="checkbox" class="checkbox-mini__input" checked="checked">
+
+						<span class="checkbox-mini__label">
+							Вы соглашаетесь <a href="/" target="_blank">на условия обработки персональных данных</a>
+						</span>
+
+					</label>
+
+				</div>
+
+				<div class="feedback__btns">
+
+					<button class="btn">
+						Применить
+					</button>
+
+					<button class="btn btn--black" type="reset">
+						Сбросить
+					</button>
+
+				</div>
+
+				<small class="feedback__note">
+					цена на устройство может поменяться при поступлении
+				</small>
+
+			</form>
+
+		</div>
+
+	</article>
+
+{% endblock %}

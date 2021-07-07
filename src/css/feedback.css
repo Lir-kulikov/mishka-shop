@@ -1,0 +1,60 @@
+.feedback {
+
+	margin: 20px 0;
+	box-shadow: var(--shadow);
+	border-radius: 6px;
+	padding: 20px;
+
+	&__title {
+
+		margin: 5px 0;
+
+	}
+
+	p {
+
+		font-size: 12px;
+		line-height: 2;
+		margin: 1em 0;
+
+	}
+
+	&__checkbox {
+
+		margin: 18px 0;
+
+	}
+
+	&__btns {
+
+		display: flex;
+		justify-content: space-between;
+		margin: 14px 0;
+
+		.btn {
+
+			width: calc(50% - 5px);
+			font-size: 12px;
+			padding: 0 20px;
+
+		}
+
+	}
+
+	&__note {
+
+		margin-top: 12px;
+		line-height: 18px;
+		font-size: 12px;
+		display: block;
+
+		&::before {
+
+			color: var(--orange);
+			content: '*';
+
+		}
+
+	}
+
+}

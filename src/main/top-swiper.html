@@ -1,0 +1,73 @@
+	<section class="card-swiper tab-swiper swiper-container-style">
+
+		<div class="card-swiper__title">
+
+			<h2 class="h1">
+				Популярные предложения
+			</h2>
+
+		</div>
+
+		<div class="card-swiper__tab">
+
+			<div class="btn-scrollbar">
+
+				<div class="btn-scrollbar__item">
+
+					<button class="btn btn--tab tab-swiper__btn is-active">
+						Смартфоны
+					</button>
+
+				</div>
+
+				<div class="btn-scrollbar__item">
+
+					<button class="btn btn--tab tab-swiper__btn">
+						Ноутбуки
+					</button>
+
+				</div>
+
+				<div class="btn-scrollbar__item">
+
+					<button class="btn btn--tab tab-swiper__btn">
+						Транспорт
+					</button>
+
+				</div>
+
+			</div>
+
+		</div>
+
+{% for item in [1,2,3] %}
+
+		<div class="tab-swiper__item{% if loop.first %} is-active{% endif %}">
+
+			<div class="card-swiper__wrap">
+
+				<div class="swiper-container swiper-container--card">
+
+					<ul class="card-swiper__list swiper-wrapper">
+
+{% for item in [1,2,3,4,5] %}
+
+						<li class="card-swiper__item swiper-slide">
+
+{% include "_include/card-preview.html" %}
+
+						</li>
+
+{% endfor %}
+
+					</ul>
+
+				</div>
+
+			</div>
+
+		</div>
+
+{% endfor %}
+
+	</section>

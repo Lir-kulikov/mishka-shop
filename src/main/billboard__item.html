@@ -1,0 +1,22 @@
+				<li class="billboard__item swiper-slide{% if loop.index > 1 %} hide{% endif %}">
+
+					<a class="billboard__el" href="/">
+
+						<picture>
+
+							<source srcset="/img/billboard/{{ item.img }}--724x350.webp 1x, /img/billboard/{{ item.img }}--1448x700.webp 2x" type="image/webp" media="(min-width: 425px)">
+							<source srcset="/img/billboard/{{ item.img }}--724x350.jpg 1x, /img/billboard/{{ item.img }}--1448x700.jpg 2x" media="(min-width: 425px)">
+
+							<source srcset="/img/billboard/{{ item.img }}--394x190.webp 1x, /img/billboard/{{ item.img }}--788x380.webp 2x" type="image/webp" media="(min-width: 375px)">
+							<source srcset="/img/billboard/{{ item.img }}--394x190.jpg 1x, /img/billboard/{{ item.img }}--788x380.jpg 2x" media="(min-width: 375px)">
+
+							<source srcset="/img/billboard/{{ item.img }}--330x160.webp 1x, /img/billboard/{{ item.img }}--660x320.webp 2x" type="image/webp">
+							<source srcset="/img/billboard/{{ item.img }}--330x160.jpg 1x, /img/billboard/{{ item.img }}--660x320.jpg 2x">
+
+							<img src="/img/billboard/{{ item.img }}--724x350.jpg" alt="{{ item.alt }}" loading="lazy" width="330" height="160">
+
+						</picture>
+
+					</a>
+
+				</li>

@@ -1,0 +1,40 @@
+{% set title = "Доставка и оплата" %}
+
+{% set description = "Mishka-shop.com - Способы оплаты, Доставка, Время работы магазинов" %}
+
+{% set ogImage = "img/shop/og.jpg" %}
+{% set ogImage236 = "img/shop/og-236.jpg" %}
+{% set urlPage = "shop" %}
+
+{% set breadcrumbs = ['Главная страница',title] %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+	<section class="center">
+
+{% include "_include/search.html" %}
+{% include "_include/breadcrumbs.html" %}
+
+		<h1 class="h1 visuallyhidden">
+			{{ title }}
+		</h1>
+
+{% include "_include/menu-btn.html" %}
+
+{% include "shop/address-shops.html" %}
+
+		<div class="tab-swiper shop">
+
+{% include "shop/tab-nav.html" %}
+{% include "shop/tab-1.html" %}
+{% include "shop/tab-2.html" %}
+{% include "shop/tab-3.html" %}
+{% include "shop/tab-4.html" %}
+
+		</div>
+
+	</section>
+
+{% endblock %}

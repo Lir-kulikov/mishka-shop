@@ -1,0 +1,47 @@
+.contacts {
+
+	margin: 20px 0;
+
+	&__map {
+
+		margin: 20px 0;
+
+		iframe {
+
+			display: block;
+			border: 0;
+			box-shadow: var(--shadow);
+			border-radius: 6px;
+
+		}
+
+	}
+
+	&__ooo {
+
+		margin: 20px 0;
+		box-shadow: var(--shadow);
+		border-radius: 6px;
+		padding: 20px;
+
+		&-list {
+
+			font-size: 12px;
+
+			dt, dd {
+
+				display: inline;
+
+			}
+
+		}
+
+		&-row {
+
+			margin-top: 10px;
+
+		}
+
+	}
+
+}

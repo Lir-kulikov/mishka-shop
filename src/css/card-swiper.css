@@ -1,0 +1,69 @@
+.tab-swiper {
+
+	&__item:not(.is-active) {
+
+		overflow: hidden;
+		height: 0;
+
+	}
+
+}
+
+.card-swiper {
+
+	margin: 32px 0;
+
+	&__title {
+
+		margin-bottom: 16px;
+
+	}
+
+	&__tab {
+
+		margin-bottom: 15px;
+
+	}
+
+	&__wrap {
+
+		margin: -15px;
+		padding: 15px;
+		overflow: hidden;
+
+		@media ($tablet) {
+
+			margin: -20px;
+			padding: 20px;
+
+		}
+
+	}
+
+	&__list {
+
+		display: flex;
+
+	}
+
+	.swiper-container {
+
+		overflow: visible;
+
+	}
+
+	&__item {
+
+		margin-right: 15px;
+		width: 218px !important;
+		flex-shrink: 0;
+
+		@media ($tablet) {
+
+			margin-right: 20px;
+
+		}
+
+	}
+
+}

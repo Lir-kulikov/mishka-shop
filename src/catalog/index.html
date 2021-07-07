@@ -1,0 +1,28 @@
+{% set title = "Купить планшет, электронную книгу Xiaomi, mi pad в Евпатории цена, рассрочка" %}
+
+{% set description = "Хотите купить планшет, электронную книгу Xiaomi mi pad, mi в Евпатории недорого? В нашем фирменном магазине сиаоми Mishka-Shop вы можете это сделать. Действует доставка, гарантия и страховка на все товары." %}
+
+{% set ogImage = "img/catalog/og.jpg" %}
+{% set ogImage236 = "img/catalog/og-236.jpg" %}
+{% set urlPage = "catalog" %}
+
+{% set breadcrumbs = ['Каталог','Ноутбуки, планшеты, периферия','Планшеты'] %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+	<section class="center filter-show__hide">
+
+{% include "_include/search.html" %}
+{% include "_include/breadcrumbs.html" %}
+{% include "catalog/head.html" %}
+{% include "catalog/list.html" %}
+{% include "_include/pagin.html" %}
+{% include "catalog/article.html" %}
+
+	</section>
+
+{% include "catalog/filter.html" %}
+
+{% endblock %}

@@ -1,0 +1,44 @@
+		<script type="application/ld+json">
+
+			{
+				"@context": "https://schema.org",
+				"@type": "Product",
+				"name": "{{ title }}",
+				"description": "{{ description }}",
+				"image": "{{ url }}/{{ ogImage }}",
+				"url": "{{ url }}/{{ urlPage }}",
+				"brand": "Xiaomi",
+				"sku": "113937",
+				"gtin13": "глобальный идентификатор товара, например код ISBN, MPN или GTIN8",
+				"offers": {
+					"@type": "Offer",
+					"price": "9935",
+					"priceValidUntil": "2020-03-03",
+					"availability": "https://schema.org/InStock",
+					"priceCurrency": "RUB",
+					"url": "{{ url }}/{{ urlPage }}"
+				},
+				"aggregateRating": {
+					"@type": "AggregateRating",
+					"worstRating": "1",
+					"bestRating" : "5",
+					"ratingValue": "4.5",
+					"reviewCount": "1"
+				},
+				"review": [
+					{
+						"@type": "Review",
+						"author": "Александр",
+						"description": "Стиральная машина куплена, прошло все ровно и теперь можно нацеливаться на покупку уже сушилки, причем и модель прямо здесь же выбрали.",
+						"reviewRating": {
+							"@type": "Rating",
+							"worstRating": "1",
+							"bestRating" : "5",
+							"ratingValue": "4.5"
+						}
+					}
+				]
+
+			}
+
+		</script>

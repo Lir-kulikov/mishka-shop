@@ -1,0 +1,113 @@
+{% set title = "Новости" %}
+
+{% set description = "Xiaomi представила умный дверной замокс функцией распознавания лица" %}
+
+{% set ogImage = "img/news/og.jpg" %}
+{% set ogImage236 = "img/news/og-236.jpg" %}
+{% set urlPage = "news" %}
+
+{% set breadcrumbs = ['Главная страница',title] %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+	<section class="center">
+
+{% include "_include/search.html" %}
+{% include "_include/breadcrumbs.html" %}
+
+		<h1 class="h1">
+			{{ title }}
+		</h1>
+
+{% include "_include/menu-btn.html" %}
+
+		<div class="news-list">
+
+{% for item in [1,2,3,4] %}
+
+			<article class="news-list__item">
+
+				<div class="card-preview">
+
+					<a href="/" class="card-preview__img is-auto">
+
+						<picture>
+
+							<source srcset="/img/card-preview/news--360x180.webp 1x, /img/card-preview/news--720x360.webp 2x" type="image/webp" media="(min-width: 375px)">
+							<source srcset="/img/card-preview/news--360x180.jpg 1x, /img/card-preview/news--720x360.jpg 2x" media="(min-width: 375px)">
+
+							<source srcset="/img/card-preview/news--290x145.webp 1x, /img/card-preview/news--580x290.webp 2x" type="image/webp">
+							<source srcset="/img/card-preview/news--290x145.jpg 1x, /img/card-preview/news--580x290.jpg 2x">
+
+							<img src="/img/card-preview/news--720x360.jpg" alt="Xiaomi представила умный дверной замокс функцией распознавания лица" loading="lazy" width="290" height="145">
+
+						</picture>
+
+					</a>
+
+					<a href="/" class="card-preview__name">
+						Xiaomi представила умный дверной замокс функцией распознавания лица
+					</a>
+
+					<p class="card-preview__text">
+						Устройство поддерживает установку паролей, сканирование отпечатка пальца и не только.
+					</p>
+
+					<div class="card-preview__row">
+
+						<address class="card-preview__autor">
+							Автор: <a href="/">Ivanov</a>
+						</address>
+
+						<time class="card-preview__date" datetime="2020-12-24">
+							2 дня назад
+						</time>
+
+					</div>
+
+					<dl class="card-preview__stat">
+
+						<div class="card-preview__stat-item card-preview__stat-item--like">
+							<dt class="visuallyhidden">
+								Количество лайков
+							</dt>
+							<dd>
+								15
+							</dd>
+						</div>
+
+						<div class="card-preview__stat-item card-preview__stat-item--view">
+							<dt class="visuallyhidden">
+								Количество просмотров
+							</dt>
+							<dd>
+								1275
+							</dd>
+						</div>
+
+						<div class="card-preview__stat-item card-preview__stat-item--comment">
+							<dt class="visuallyhidden">
+								Количество комментариев
+							</dt>
+							<dd>
+								25
+							</dd>
+						</div>
+
+					</dl>
+
+				</div>
+
+			</article>
+
+{% endfor %}
+
+		</div>
+
+{% include "_include/pagin.html" %}
+
+	</section>
+
+{% endblock %}

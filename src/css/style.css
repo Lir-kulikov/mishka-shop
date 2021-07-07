@@ -1,0 +1,45 @@
+@import url(fonts.css);
+@import url(variables.css);
+@import url(media.css);
+@import url(default.css);
+
+@import url(form.css);
+
+@import url(modal.css);
+@import url(swiper.css);
+
+@import url(header.css);
+@import url(menu.css);
+@import url(footer.css);
+@import url(social.css);
+@import url(menu-catalog.css);
+
+@import url(pagin.css);
+@import url(article.css);
+@import url(breadcrumbs.css);
+
+@import url(search-shop.css);
+@import url(billboard.css);
+@import url(main-catalog.css);
+@import url(card-swiper.css);
+@import url(card-preview.css);
+@import url(address-shops.css);
+
+@import url(catalog.css);
+@import url(filter.css);
+@import url(accordion.css);
+@import url(tabs.css);
+
+@import url(product.css);
+@import url(review.css);
+
+@import url(bonus.css);
+@import url(contacts.css);
+@import url(news.css);
+@import url(menu-btn.css);
+@import url(feedback.css);
+@import url(shop.css);
+@import url(cart.css);
+
+
+@import url(lk.css);

@@ -1,0 +1,27 @@
+.social {
+
+	display: flex;
+
+	&__item {
+
+		margin-right: 20px;
+
+	}
+
+	&__link {
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 24px;
+		height: 24px;
+
+		svg {
+
+			fill: var(--orange);
+
+		}
+
+	}
+
+}

@@ -1,0 +1,39 @@
+.visible-tablet {
+
+	display: none;
+
+}
+
+.center {
+
+	margin: 0 auto;
+	width: 320px;
+	width: 560px;
+	max-width: 100%;
+	position: relative;
+	padding: 0 15px;
+
+}
+
+@media ($tablet) {
+
+	.hidden-tablet {
+
+		display: none !important;
+
+	}
+
+	.visible-tablet {
+
+		display: block;
+
+	}
+
+	.center {
+
+		padding: 0 20px;
+		width: 960px;
+
+	}
+
+}

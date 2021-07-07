@@ -1,0 +1,64 @@
+.menu {
+
+	padding: 25px 0 100px;
+
+	&__title {
+
+		margin-bottom: 12px;
+
+	}
+
+	&__item {
+
+		margin: 8px 0;
+
+	}
+
+	&__link {
+
+		font-size: 16px;
+		line-height: 22px;
+
+	}
+
+	hr {
+
+		background-color: #6f6f6f;
+		margin: 20px 0 14px;
+
+	}
+
+	&__tel {
+
+		margin: 12px 0;
+
+	}
+
+	&__city {
+
+		display: flex;
+		align-items: center;
+		margin: 20px 0 5px;
+
+		&-label {
+
+			font-size: 14px;
+			flex-shrink: 0;
+
+		}
+
+		&-ico {
+
+			width: 26px;
+			display: flex;
+			justify-content: center;
+			flex-shrink: 0;
+			fill: var(--orange);
+
+		}
+
+	}
+
+
+
+}

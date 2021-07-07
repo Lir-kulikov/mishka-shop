@@ -1,0 +1,32 @@
+{% set list = [
+	{
+		img: 1,
+		alt: "Топовые ноутбуки XIAOMI"
+	},
+	{
+		img: 2,
+		alt: "MI 9T PRO PREMIUM"
+	}
+] %}
+
+	<aside class="billboard swiper-container-style">
+
+		<div class="billboard__box">
+
+			<div class="swiper-container swiper-container--billboard">
+
+				<ul class="billboard__list swiper-wrapper">
+
+{% for item in list %}
+
+{% include "main/billboard__item.html" %}
+
+{% endfor %}
+
+				</ul>
+
+			</div>
+
+		</div>
+
+	</aside>

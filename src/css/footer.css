@@ -1,0 +1,115 @@
+.footer {
+
+	flex-shrink: 0;
+	color: #fff;
+	font-size: 16px;
+	padding: 30px 10px;
+	background-color: #262626;
+	margin-top: 20px;
+
+	a {
+
+		color: inherit;
+		text-decoration: none;
+
+	}
+
+	hr {
+
+		margin: 24px 0;
+
+	}
+
+	&__copyright {
+
+		font-size: 12px;
+		line-height: 24px;
+
+	}
+
+	&__social {
+
+		padding-bottom: 6px;
+
+		p {
+
+			margin-bottom: 14px;
+
+		}
+
+	}
+
+	&__subscribe {
+
+		.input {
+
+			border: 0;
+			border-radius: 5px;
+			margin-top: 12px;
+			height: 45px;
+
+		}
+
+	}
+
+	&__menu {
+
+		column-count: 2;
+		column-gap: 20px;
+		column-width: 50%;
+		font-size: 12px;
+
+		li {
+
+			padding: 6px 0;
+
+		}
+
+	}
+
+	&__contact {
+
+		font-size: 14px;
+		line-height: 24px;
+
+	}
+
+	&__text-ico {
+
+		display: flex;
+		align-items: flex-start;
+
+		& + & {
+
+			margin-top: 10px;
+
+		}
+
+		&--space {
+
+			padding-top: 8px;
+
+		}
+
+		&-svg {
+
+			width: 24px;
+			height: 24px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-shrink: 0;
+			margin-left: -6px;
+			margin-right: 4px;
+
+			svg {
+
+				fill: var(--orange);
+
+			}
+
+		}
+
+	}
+
+}

@@ -1,0 +1,95 @@
+{% set title = "Личный кабинет" %}
+
+{% set breadcrumbs = ['Главная страница',title] %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+	<section class="center">
+
+{% include "_include/search.html" %}
+{% include "_include/breadcrumbs.html" %}
+
+		<h1 class="h1">
+			{{ title }}
+		</h1>
+
+{% include "lk/menu.html" %}
+
+		<div class="lk">
+
+			<div class="lk__data">
+
+{% set table = [
+
+	{
+		th : "Ваше имя",
+		td : "Sonar Pavel"
+	},
+	{
+		th : "Телефон",
+		td : "+79645645645"
+	},
+	{
+		th : "E-mail",
+		td : "info@pavelsonar.net"
+	},
+	{
+		th : "Мишкины монеты",
+		td : "9962"
+	},
+	{
+		th : "Ваш статус",
+		td : "Серебряные монеты (3%)"
+	},
+	{
+		th : "Оплаченные заказы",
+		td : "48656"
+	}
+
+] %}
+				<table>
+
+					<tbody>
+
+{% for tr in table %}
+
+						<tr>
+							<th>
+								{{ tr.th }}:
+							</th>
+							<td>
+								{{ tr.td }}
+							</td>
+						</tr>
+
+{% endfor %}
+
+					</tbody>
+
+				</table>
+
+				<hr>
+
+				<div class="lk__data-foot-2link">
+
+					<a href="/">
+						Изменить
+					</a>
+
+					<a href="/">
+						Хочешь еще монеток?
+					</a>
+
+				</div>
+
+			</div>
+
+		</div>
+
+{% include "lk/menu-btn.html" %}
+
+	</section>
+
+{% endblock %}

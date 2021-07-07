@@ -1,0 +1,311 @@
+.card-preview {
+
+	padding: 20px;
+	border-radius: 6px;
+	background-color: #fff;
+	box-shadow: var(--shadow);
+
+	&__sku {
+
+		font-size: 12px;
+		line-height: 18px;
+		margin-bottom: 12px;
+
+	}
+
+	&__img {
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 12px;
+
+		img {
+
+			object-fit: contain;
+
+		}
+
+		&.is-auto {
+
+			display: block;
+
+			img {
+
+				width: auto;
+				height: auto;
+				max-width: 100%;
+				border-radius: 4px;
+
+			}
+
+		}
+
+	}
+
+	&__available {
+
+		font-size: 14px;
+		color: var(--green);
+
+	}
+
+	&__name {
+
+		font-size: 14px;
+		line-height: 18px;
+		height: 36px;
+		overflow: hidden;
+		margin: 10px 0;
+		display: block;
+
+	}
+
+	&__text {
+
+		font-size: 11px;
+		line-height: 18px;
+		margin: 10px 0;
+		display: block;
+
+	}
+
+	&__order {
+
+		position: relative;
+		min-height: 36px;
+		padding-right: 50px;
+
+	}
+
+	&__stars {
+
+		display: flex;
+		width: 90px;
+		height: 20px;
+
+		&-value {
+
+			width: 100%;
+			font-size: 0;
+			color: transparent;
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='20' viewBox='0 0 90 20'%3E%3Cdefs%3E%3Cpath id='ico-star' fill='%23ff4a00' d='M14,5.07a.74.74,0,0,0-.64-.51l-4-.37L7.68.45a.74.74,0,0,0-1.37,0L4.72,4.19l-4,.37a.74.74,0,0,0-.42,1.3L3.31,8.54l-.9,4a.74.74,0,0,0,1.11.8L7,11.23l3.48,2.08a.74.74,0,0,0,1.11-.8l-.9-4,3.05-2.68A.74.74,0,0,0,14,5.07Z'/%3E%3C/defs%3E%3Cuse href='%23ico-star' x='2' y='4'/%3E%3Cuse href='%23ico-star' x='20' y='4'/%3E%3Cuse href='%23ico-star' x='38' y='4'/%3E%3Cuse href='%23ico-star' x='56' y='4'/%3E%3Cuse href='%23ico-star' x='74' y='4'/%3E%3C/svg%3E");
+
+			&--90 {
+
+				width: 90%;
+
+			}
+
+			&--80 {
+
+				width: 80%;
+
+			}
+
+			&--70 {
+
+				width: 70%;
+
+			}
+
+			&--60 {
+
+				width: 60%;
+
+			}
+
+			&--50 {
+
+				width: 50%;
+
+			}
+
+			&--40 {
+
+				width: 40%;
+
+			}
+
+			&--30 {
+
+				width: 30%;
+
+			}
+
+			&--20 {
+
+				width: 20%;
+
+			}
+
+			&--10 {
+
+				width: 10%;
+
+			}
+
+		}
+
+	}
+
+	&__price {
+
+		margin-top: 10px;
+
+		&-old {
+
+			font-size: 14px;
+			color: var(--text);
+			text-decoration: line-through;
+
+		}
+
+	}
+
+	&__buy {
+
+		position: absolute;
+		right: 0;
+		bottom: 0;
+
+	}
+
+	&__row {
+
+		display: flex;
+		justify-content: space-between;
+		color: var(--text);
+		font-size: 12px;
+		line-height: 14px;
+		margin: 10px 0;
+		max-width: 200px;
+
+		a {
+
+			color: var(--orange);
+
+		}
+
+	}
+
+	&__stat {
+
+		display: flex;
+		border-radius: 5px;
+		border: 1px solid #f3f3f3;
+		padding: 7px 14px;
+		margin: 14px 0 0;
+
+		&.in-swiper {
+
+			margin: 14px -10px -4px;
+			padding: 7px 10px;
+
+		}
+
+		&-item {
+
+			flex-grow: 1;
+			color: var(--text);
+			font-size: 12px;
+			padding-left: 22px;
+			white-space: nowrap;
+			background-position: left;
+			background-repeat: no-repeat;
+
+			&--like {
+
+				color: var(--color);
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='14' viewBox='0 0 15 14' fill='%230ead43'%3E%3Cpath d='M14.61 8.37a1.35 1.35 0 00-.4-1 1.51 1.51 0 00.39-1.16A1.57 1.57 0 0013 4.87H9.25a8.75 8.75 0 00.48-2.43A2.49 2.49 0 007.91 0a1.91 1.91 0 00-1.1.37.3.3 0 00-.11.24v2.06l-1.76 3.8h-.07v-.08a.3.3 0 00-.3-.3h-3A1.52 1.52 0 000 7.61v4.87A1.52 1.52 0 001.52 14h1.83a1.53 1.53 0 001.43-1 4 4 0 001.61.4H12a1.4 1.4 0 001.38-1.06 1.37 1.37 0 00-.11-.91 1.36 1.36 0 00.61-1.83 1.36 1.36 0 00.73-1.23zm-1.28.75a.3.3 0 00-.17.52.75.75 0 01-.43 1.3.3.3 0 00-.17.52.75.75 0 01.22.73.79.79 0 01-.78.59H6.39a2.89 2.89 0 01-1.61-.52.3.3 0 00-.52.22.91.91 0 01-.91.91H1.52a.91.91 0 01-.91-.91V7.61a.91.91 0 01.91-.91h2.74V7a.31.31 0 00.14.26.31.31 0 00.3 0L5.31 7a.3.3 0 00.14-.14l1.83-4a.31.31 0 000-.13v-2a1.28 1.28 0 01.63-.12 2 2 0 011.22 1.82 9.48 9.48 0 01-.59 2.63.3.3 0 00.28.41H13a1 1 0 011 .83.91.91 0 01-.43.86.3.3 0 000 .53.75.75 0 01-.26 1.42z'/%3E%3Cpath d='M4.57 6.7a.3.3 0 00-.3.3v5.48a.3.3 0 00.61 0V7a.3.3 0 00-.31-.3z'/%3E%3C/svg%3E");
+
+			}
+
+			&--view {
+
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10' fill='%23aaa'%3E%3Cpath d='M15.59 4.69C15.45 4.5 12.11 0 7.84 0S.24 4.5.1 4.69a.52.52 0 000 .61c.14.2 3.48 4.7 7.74 4.7s7.61-4.5 7.75-4.69a.52.52 0 000-.62zM7.84 9C4.7 9 2 6 1.18 5 2 4 4.7 1 7.84 1s5.86 3 6.67 4c-.8 1-3.51 4-6.67 4z'/%3E%3Cpath d='M7.84 1.9A3.1 3.1 0 1010.95 5a3.11 3.11 0 00-3.11-3.1zm0 5.17A2.07 2.07 0 119.91 5a2.07 2.07 0 01-2.07 2.07z'/%3E%3C/svg%3E");
+
+			}
+
+			&--comment {
+
+				background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='13' viewBox='0 0 15 13' fill='%23aaa'%3E%3Cpath d='M12.19 0H1.94A1.94 1.94 0 000 1.94v6.27a1.94 1.94 0 001.94 1.94V13L6 10.15h6.16a1.94 1.94 0 001.94-1.94V1.94A1.94 1.94 0 0012.19 0zm1.11 8.21a1.12 1.12 0 01-1.11 1.11H5.76l-3 2.09V9.33h-.82A1.12 1.12 0 01.83 8.21V1.94A1.12 1.12 0 011.94.83h10.25a1.12 1.12 0 011.11 1.11z'/%3E%3Cpath d='M3.78 2.93h6.57v.83H3.78zM3.78 4.69h6.57v.83H3.78zM3.78 6.46h6.57v.83H3.78z'/%3E%3C/svg%3E%0A");
+
+			}
+
+		}
+
+	}
+
+}
+
+
+.stars {
+
+	display: flex;
+	width: 90px;
+	height: 20px;
+	font-size: 0;
+	color: transparent;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='20' viewBox='0 0 90 20'%3E%3Cdefs%3E%3Cpath id='ico-star' fill='%23ff4a00' d='M14,5.07a.74.74,0,0,0-.64-.51l-4-.37L7.68.45a.74.74,0,0,0-1.37,0L4.72,4.19l-4,.37a.74.74,0,0,0-.42,1.3L3.31,8.54l-.9,4a.74.74,0,0,0,1.11.8L7,11.23l3.48,2.08a.74.74,0,0,0,1.11-.8l-.9-4,3.05-2.68A.74.74,0,0,0,14,5.07Z'/%3E%3C/defs%3E%3Cuse href='%23ico-star' x='2' y='4'/%3E%3Cuse href='%23ico-star' x='20' y='4'/%3E%3Cuse href='%23ico-star' x='38' y='4'/%3E%3Cuse href='%23ico-star' x='56' y='4'/%3E%3Cuse href='%23ico-star' x='74' y='4'/%3E%3C/svg%3E");
+
+	&[data-value="4.5"] {
+
+		width: calc(18px * 4.5);
+
+	}
+
+	&[data-value="4"],
+	&[data-value="4.0"] {
+
+		width: calc(18px * 4);
+
+	}
+
+	&[data-value="3.5"] {
+
+		width: calc(18px * 3.5);
+
+	}
+
+	&[data-value="3"],
+	&[data-value="3.0"] {
+
+		width: calc(18px * 3);
+
+	}
+
+	&[data-value="2.5"] {
+
+		width: calc(18px * 2.5);
+
+	}
+
+	&[data-value="2"],
+	&[data-value="2.0"] {
+
+		width: calc(18px * 2);
+
+	}
+
+	&[data-value="1.5"] {
+
+		width: calc(18px * 1.5);
+
+	}
+
+	&[data-value="1"],
+	&[data-value="1.0"] {
+
+		width: 18px;
+
+	}
+
+	&[data-value=".5"],
+	&[data-value="0.5"] {
+
+		width: 9px;
+
+	}
+
+}

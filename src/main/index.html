@@ -1,0 +1,35 @@
+{% set title = "Фирменный магазин xiaomi в Москве, купить redmi, ноутбук, умный дом - Mishka-Shop" %}
+
+{% set description = "Наш фирменный магазин xiaomi в Москве, предлагает купить продукцию xiaomi со значительной экономией вашего времени и денежных средств. Доставка, гарантия" %}
+
+{% set preloadImage = [
+	{
+		media: "(min-width: 425px)",
+		img : "/img/billboard/1--724x350.webp"
+	},
+	{
+		media: "(min-width: 375px) and (max-width: 424px)",
+		img : "/img/billboard/1--394x190.webp"
+	},
+	{
+		media: "(max-width: 374px)",
+		img : "/img/billboard/1--330x160.webp"
+	}
+] %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+	<div class="center">
+
+{% include "_include/search.html" %}
+{% include "main/billboard.html" %}
+{% include "main/main-catalog.html" %}
+{% include "main/top-swiper.html" %}
+{% include "main/blog-swiper.html" %}
+{% include "main/address-shops.html" %}
+
+	</div>
+
+{% endblock %}

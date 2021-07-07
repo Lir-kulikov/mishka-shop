@@ -1,0 +1,149 @@
+{% set title = "История заказов" %}
+
+{% set breadcrumbs = ['Главная страница','Личный кабинет',title] %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+	<section class="center">
+
+{% include "_include/search.html" %}
+{% include "_include/breadcrumbs.html" %}
+
+		<h1 class="h1">
+			{{ title }}
+		</h1>
+
+{% include "lk/menu.html" %}
+
+		<div class="lk">
+
+{% set table = [
+
+	{
+		th : "Номер заказа",
+		td : "#243245"
+	},
+	{
+		th : "Дата",
+		td : "26.05.20"
+	},
+	{
+		th : "Товаров",
+		td : "1"
+	},
+	{
+		th : "Итого",
+		td : "83242 руб."
+	},
+	{
+		th : "Статус",
+		td : "Отменен"
+	}
+
+] %}
+
+			<div class="lk__data">
+
+				<table>
+
+					<tbody>
+
+{% for tr in table %}
+
+						<tr>
+							<th>
+								{{ tr.th }}:
+							</th>
+							<td>
+								{{ tr.td }}
+							</td>
+						</tr>
+
+{% endfor %}
+
+					</tbody>
+
+				</table>
+
+				<hr>
+
+				<div class="lk__data-center-btn-ico">
+
+					<a href="/">
+
+						<svg width="42" height="42" viewBox="0 0 210 210">
+							<circle cx="105" cy="105" r="105" fill="#fe4a00"/>
+							<path d="M96.81 131.67a34.66 34.66 0 0019.32-5.88l20 20a4.16 4.16 0 005.8 0l3.89-3.89a4.17 4.17 0 000-5.81l-20.07-19.94a34.79 34.79 0 10-28.94 15.51zm0-56a21.18 21.18 0 11-21.16 21.18 21.18 21.18 0 0121.16-21.19z" fill="#fff"/>
+						</svg>
+
+					</a>
+
+					<a href="/">
+
+						<svg width="42" height="42" viewBox="0 0 222 222">
+							<circle cx="111" cy="111" r="105" fill="none" stroke="#fe4a00" stroke-width="12"/>
+							<path d="M68.42 115l32.14 32.56a4.84 4.84 0 006.85 0l2.92-3a4.93 4.93 0 001.42-3.49 5 5 0 00-1.42-3.53l-18.75-19h59.57a4.78 4.78 0 004.81-4.76v-4.27a5 5 0 00-4.81-5.07H91.41l19-19.14a4.93 4.93 0 000-6.93l-2.92-2.95a4.84 4.84 0 00-6.85 0L68.42 108a5 5 0 000 7z" fill="#fe4a00"/>
+						</svg>
+
+					</a>
+
+				</div>
+
+			</div>
+
+			<div class="lk__data">
+
+				<table>
+
+					<tbody>
+
+{% for tr in table %}
+
+						<tr>
+							<th>
+								{{ tr.th }}:
+							</th>
+							<td>
+								{{ tr.td }}
+							</td>
+						</tr>
+
+{% endfor %}
+
+					</tbody>
+
+				</table>
+
+				<hr>
+
+				<div class="lk__data-center-btn-ico">
+
+					<a href="/">
+
+						<svg width="42" height="42" viewBox="0 0 210 210">
+							<circle cx="105" cy="105" r="105" fill="#fe4a00"/>
+							<path d="M96.81 131.67a34.66 34.66 0 0019.32-5.88l20 20a4.16 4.16 0 005.8 0l3.89-3.89a4.17 4.17 0 000-5.81l-20.07-19.94a34.79 34.79 0 10-28.94 15.51zm0-56a21.18 21.18 0 11-21.16 21.18 21.18 21.18 0 0121.16-21.19z" fill="#fff"/>
+						</svg>
+
+					</a>
+
+					<a href="/">
+
+						<svg width="42" height="42" viewBox="0 0 222 222">
+							<circle cx="111" cy="111" r="105" fill="none" stroke="#fe4a00" stroke-width="12"/>
+							<path d="M68.42 115l32.14 32.56a4.84 4.84 0 006.85 0l2.92-3a4.93 4.93 0 001.42-3.49 5 5 0 00-1.42-3.53l-18.75-19h59.57a4.78 4.78 0 004.81-4.76v-4.27a5 5 0 00-4.81-5.07H91.41l19-19.14a4.93 4.93 0 000-6.93l-2.92-2.95a4.84 4.84 0 00-6.85 0L68.42 108a5 5 0 000 7z" fill="#fe4a00"/>
+						</svg>
+
+					</a>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+
+{% endblock %}

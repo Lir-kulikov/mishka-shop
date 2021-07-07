@@ -1,0 +1,59 @@
+{% set title = "Бонусная система" %}
+
+{% set ogImage = "img/bonus/og.jpg" %}
+{% set ogImage236 = "img/bonus/og-236.jpg" %}
+{% set urlPage = "bonus" %}
+
+{% set breadcrumbs = ['Главная страница',title] %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+	<section class="center">
+
+{% include "_include/search.html" %}
+{% include "_include/breadcrumbs.html" %}
+
+		<article class="bonus">
+
+			<div class="bonus__text">
+
+				<h1 class="h1">
+					Бонусная система магазина
+				</h1>
+
+				<p>
+					Клуб «Mишкины Монеты» появился для постоянных покупателей нашего фирменного магазина xiaomi в Москве Mishka-Shop, c целью, чтобы Ваши покупки стали более приятными, а цены еще более радужными.
+				</p>
+
+				<p>
+					Все друзья нашего клуба накапливают монеты за покупки и другие действия (репосты, написание отзывов, кол-ва покупок...). И могут оплачивать ими до 30% от суммы заказа, не учитывая доставку.
+				</p>
+
+				<p>
+					Чтобы получать бонусы, надо делать покупки у нас на сайте через корзину, в магазине или по телефону.
+				</p>
+
+				<img src="/img/bonus/mi.jpg" srcset="/img/bonus/mi@2x.jpg 2x" width="360" height="310" alt="" loading="lazy">
+
+			</div>
+
+			<div class="bonus__rules">
+
+				<h2 class="h1">
+					Как получить монеты?
+				</h2>
+
+{% include "bonus/rules.html" %}
+
+			</div>
+
+{% include "bonus/status.html" %}
+
+		</article>
+
+
+	</section>
+
+{% endblock %}

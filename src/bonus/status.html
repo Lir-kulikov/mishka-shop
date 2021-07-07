@@ -1,0 +1,78 @@
+			<div class="bonus__status">
+
+				<h2 class="h1">
+					Статусы
+				</h2>
+
+				<p>
+					В зависимости от суммы заказов на сайте Mishka-Shop, участники клуба получают разный статус. Чем выше статус&nbsp;—&nbsp;тем больше привилегий.
+				</p>
+
+				<ul class="bonus__status-list">
+
+{% set list = [
+
+	{
+		name  : "Бронзовые",
+		img   : "bronze",
+		desc  : "Получение 100 бонусов разово, при регистрации",
+		bonus : "2% бонусов от суммы заказа"
+	},
+	{
+		name  : "Серебряные",
+		img   : "silver",
+		desc  : "Сделали заказов на общую сумму от 30 тысяч рублей",
+		bonus : "3% бонусов от суммы заказа"
+	},
+	{
+		name  : "Золотые",
+		img   : "gold",
+		desc  : "Ваши заказы перевалили за 100 тысяч рублей",
+		bonus : "4% бонусов от суммы заказа"
+	},
+	{
+		name  : "Платиновые",
+		img   : "platinum",
+		desc  : "Cумма покупок преодолела рубеж в 170 тысяч рублей",
+		bonus : "5% бонусов от суммы заказа"
+	}
+
+] %}
+
+{% for item in list %}
+
+					<li class="bonus__status-item">
+
+						<h3 class="h2">
+							{{ item.name }} <br> монеты
+						</h3>
+
+						<div class="bonus__status-rules">
+
+							<img src="/img/bonus/{{ item.img }}.png" width="42" height="42" alt="{{ item.name }}" loading="lazy">
+
+							<p>
+								{{ item.desc }}
+							</p>
+
+						</div>
+
+						<div class="bonus__status-discount">
+
+							<h4 class="h3">
+								Привилегии:
+							</h4>
+
+							<p>
+								{{ item.bonus }}
+							</p>
+
+						</div>
+
+					</li>
+
+{% endfor %}
+
+				</ul>
+
+			</div>

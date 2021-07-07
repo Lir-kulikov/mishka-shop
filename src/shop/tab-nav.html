@@ -1,0 +1,15 @@
+	<div class="menu-btn menu-btn--table-4">
+
+{% for item in ['Самовывоз','Доставка по Москве','Доставка за МКАД','Доставка по России'] %}
+
+		<div class="menu-btn__item">
+
+			<button type="button" class="tab-swiper__btn menu-btn__link btn{% if loop.first %} is-active{% endif %}">
+				{{ item }}
+			</button>
+
+		</div>
+
+{% endfor %}
+
+	</div>

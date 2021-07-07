@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru" prefix="og: https://ogp.me/ns#">
+<head>
+
+	<meta charset="utf-8">
+
+	<title>{{ title }}</title>
+
+	<link href="/css/styles.css" rel="preload" as="style">
+	<link href="/js/scripts.js" rel="preload" as="script">
+	<link href="/fonts/roboto-condensed-v18-latin_cyrillic-ext_cyrillic-300.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+	<link href="/fonts/roboto-condensed-v18-latin_cyrillic-ext_cyrillic-700.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+	<link href="/fonts/roboto-condensed-v18-latin_cyrillic-ext_cyrillic-regular.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+	<link href="/js/swiper.min.js" rel="preload" as="script">
+	<link href="//mc.yandex.ru" rel="dns-prefetch">
+
+	<link href="/favicon.png" rel="apple-touch-icon-precomposed">
+
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="{{ description | default('Фирменный магазин Xiaomi в Москве. Оригинальные товары, фирменная гарантия, доставка в любую точку России от 2-х дней') }}">
+	<meta name="theme-color" content="#fff">
+
+	<meta property="og:locale" content="ru_RU">
+	<meta property="og:site_name" content="{{ site }}">
+	<meta property="og:url" content="{{ url }}/{% if urlPage %}{{ urlPage }}/{% endif %}">
+	<meta property="og:type" content="{{ ogType | default('website') }}">
+	<meta property="og:title" content="{{ title }}">
+	<meta property="og:description" content="{{ description | default('Фирменный магазин Xiaomi в Москве. Оригинальные товары, фирменная гарантия, доставка в любую точку России от 2-х дней') }}">
+
+	<meta property="og:image" content="{{ url }}/{{ ogImage | default('og.jpg') }}">
+	<meta property="og:image:secure_url" content="{{ url }}/{{ ogImage | default('og.jpg') }}">
+{% if not ogImage %}
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+{% endif %}
+	<meta property="og:image" content="{{ url }}/{{ ogImage236 | default('og-236.jpg') }}">
+{% if not ogImage236 %}
+	<meta property="og:image:width" content="236">
+	<meta property="og:image:height" content="236">
+{% endif %}
+
+	<link href="/css/styles.css" rel="stylesheet">
+	<script defer src="/js/scripts.js"></script>
+
+	<script>
+		if('serviceWorker' in navigator){
+			window.addEventListener('load', () => {
+				navigator.serviceWorker.register('/sw.js')
+					.then(reg => console.log('service worker registered'))
+					.catch(err => console.log('service worker not registered', err));
+			});
+		}
+	</script>
+
+{% for item in preloadImage %}
+
+	<link href="{{ item.img }}" rel="preload" as="image" media="{{ item.media }}">
+
+{% endfor %}
+
+</head>
+
+<body>
+
+{% include "template/schema.html" %}
+
+<div class="wrapper">
+
+{% include "template/header.html" %}
+
+{% include "template/menu-catalog.html" %}
+
+	<main class="main">
+
+{% block content %}{% endblock %}
+
+	</main>
+
+{% include "template/footer.html" %}
+
+</div>
+
+{% include "template/modal.html" %}
+
+</body>
+</html>

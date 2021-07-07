@@ -1,0 +1,33 @@
+.breadcrumbs {
+
+	margin: 20px 0;
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 11px;
+
+	&__item {
+
+		display: flex;
+
+		&::after {
+
+			content: '/';
+			padding: 0 4px;
+
+		}
+
+		&:last-child {
+
+			color: var(--orange);
+
+			&::after {
+
+				display: none;
+
+			}
+
+		}
+
+	}
+
+}

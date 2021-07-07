@@ -1,0 +1,265 @@
+{% set title = "Заказ №1224 от 26.05.20" %}
+
+{% set breadcrumbs = ['Главная страница','Личный кабинет','История заказов',title] %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+	<section class="center">
+
+{% include "_include/search.html" %}
+{% include "_include/breadcrumbs.html" %}
+
+		<div class="lk">
+
+			<a href="/" class="lk__back">
+				<svg width="20" height="20" viewBox="0 0 512 512"><path d="M492 236H68.44l70.17-69.82a20 20 0 10-28.22-28.36l-104.5 104-.02.02a20.02 20.02 0 000 28.32l.01.02 104.5 104a20 20 0 0028.22-28.36L68.44 276H492a20 20 0 100-40z"/></svg>
+				Вернуться к списку заказов
+			</a>
+
+			<div class="lk__black">
+
+				<b>
+					Заказ №23493 от 26.05.2020 <br>
+					1 товар на сумму 35 240 руб.
+				</b>
+
+			</div>
+
+			<h2 class="h1">
+				История заказов
+			</h2>
+
+			<div class="lk__data">
+
+				<table>
+
+					<tbody>
+
+						<tr>
+							<th>
+								ФИО:
+							</th>
+							<td>
+								Мишка-Шоп
+							</td>
+						</tr>
+
+						<tr>
+							<th>
+								Текущий статус:
+								<small>Заказ отменен</small>
+							</th>
+							<td>
+								от 07.02.2020
+							</td>
+						</tr>
+
+						<tr>
+							<th>
+								Сумма:
+							</th>
+							<td>
+								35 240 р.
+							</td>
+						</tr>
+
+					</tbody>
+
+				</table>
+
+				<div class="lk__btn-flex">
+
+					<a href="/" class="btn">
+						Повторить заказ
+					</a>
+
+				</div>
+
+			</div>
+
+			<h2 class="h1">
+				Параметры оплаты
+			</h2>
+
+			<div class="lk__paymend">
+
+				<p>
+					Заказ №1224 от 26.05.20 <br>
+					Сумма заказа: 12693 руб.
+				</p>
+
+				<hr>
+
+				<p>
+					<b>
+						Счет №1224 от 26.05.20 <br>
+						Оплата наличными
+					</b>
+				</p>
+
+				<div class="lk__btn-flex">
+
+					<a href="/" class="btn btn--black">
+						Не оплачено
+					</a>
+
+				</div>
+
+				<p>
+					<b>
+						Сумма к оплате по счету 12 693 руб.
+					</b>
+				</p>
+
+				<div class="lk__btn-flex">
+
+					<a href="/" class="btn btn--readme">
+						Сменить способ оплаты
+					</a>
+
+				</div>
+
+			</div>
+
+			<h2 class="h1">
+				Параметры отгрузки
+			</h2>
+
+			<div class="lk__card">
+
+				<h3 class="lk__head">
+					Отгрузка №, стоимость доставки 350 руб.
+				</h3>
+
+				<p>
+					Служба доставки:
+					<b>Самовывоз</b>
+				</p>
+
+				<p>
+					Статус отгрузки:
+					<b>Ожидает обработки</b>
+				</p>
+
+				<div class="lk__btn-flex">
+
+					<a href="/" class="btn btn--readme">
+						Показать всё
+					</a>
+
+				</div>
+
+			</div>
+
+			<div class="lk__card">
+
+				<h3 class="lk__head">
+					Отгрузка №, стоимость доставки 350 руб.
+				</h3>
+
+				<p>
+					Служба доставки:
+					<b>Самовывоз</b>
+				</p>
+
+				<p>
+					Статус отгрузки:
+					<b>Ожидает обработки</b>
+				</p>
+
+				<div class="lk__btn-flex">
+
+					<a href="/" class="btn btn--readme">
+						Показать всё
+					</a>
+
+				</div>
+
+			</div>
+
+			<h2 class="h1">
+				Содержимое заказа
+			</h2>
+
+			<div class="lk__data">
+
+				<a class="lk__head" href="/" target="_blank">
+					Робот-пылесос Xiaomi Roborock S5 Max Robot Vacuum Cleaner White (Белый)
+				</a>
+
+				<table>
+					<tbody>
+						<tr>
+							<th>
+								Цена:
+							</th>
+							<td>
+								<b>12 693 руб.</b>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Количество:
+							</th>
+							<td>
+								<b>1 шт.</b>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Сумма:
+							</th>
+							<td>
+								<b>12 693 руб.</b>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+			</div>
+
+			<div class="lk__data is-black">
+
+				<table>
+					<tbody>
+						<tr>
+							<th>
+								Товар на:
+							</th>
+							<td>
+								<b>12 693 руб.</b>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Стоимость доставки:
+							</th>
+							<td>
+								<b>350 руб.</b>
+							</td>
+						</tr>
+						<tr>
+							<th>
+								Итого:
+							</th>
+							<td>
+								<b>12 693 руб.</b>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+			</div>
+
+			<a href="/" class="lk__back">
+				<svg width="20" height="20" viewBox="0 0 512 512"><path d="M492 236H68.44l70.17-69.82a20 20 0 10-28.22-28.36l-104.5 104-.02.02a20.02 20.02 0 000 28.32l.01.02 104.5 104a20 20 0 0028.22-28.36L68.44 276H492a20 20 0 100-40z"/></svg>
+				Вернуться к списку заказов
+			</a>
+
+		</div>
+
+	</section>
+
+{% endblock %}

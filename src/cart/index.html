@@ -1,0 +1,269 @@
+{% set title = "Корзина" %}
+
+{% set urlPage = "cart" %}
+
+{% set breadcrumbs = ['Главная страница','Содержимое корзины'] %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+	<section class="center">
+
+{% include "_include/search.html" %}
+{% include "_include/breadcrumbs.html" %}
+
+
+		<h1 class="h1">
+			{{ title }}
+		</h1>
+
+		<p class="achtung">
+			1 монета = 1 рублю; <br>бонусы начисляются когда заказ выполнен или оплачен <br>Бонусы не начисляются в случае, если текущий заказ оплачивается имеющимися монетами <br>Количество бонусов и свой статус можно посмотреть в личном кабинете.
+		</p>
+
+		<form action="/" class="cart">
+
+			<div class="menu-btn menu-btn--table-4">
+
+				<div class="menu-btn__item">
+
+					<button class="menu-btn__link btn is-active">
+						Оформить заказ
+					</button>
+
+				</div>
+
+				<div class="menu-btn__item">
+
+					<a href="/" class="menu-btn__link btn">
+						Продолжить покупки
+					</a>
+
+				</div>
+
+				<div class="menu-btn__item">
+
+					<button type="button" class="menu-btn__link btn">
+						Очистить корзину
+					</button>
+
+				</div>
+
+			</div>
+
+			<div class="cart__item">
+
+				<div class="cart__item-box">
+
+					<a href="/" class="cart__item-img">
+
+						<picture>
+
+							<source srcset="/img/card-preview/f9210dbaaf7b338e6d8d2bdbdba84b96--120x120.webp 1x, /img/card-preview/f9210dbaaf7b338e6d8d2bdbdba84b96--240x240.webp 2x" type="image/webp">
+							<source srcset="/img/card-preview/f9210dbaaf7b338e6d8d2bdbdba84b96--120x120.jpg 1x, /img/card-preview/f9210dbaaf7b338e6d8d2bdbdba84b96--240x240.jpg 2x">
+
+							<img src="/img/card-preview/f9210dbaaf7b338e6d8d2bdbdba84b96--120x120.jpg" alt="Xiaomi Redmi Note 7 6/64GB Twilight Gold" loading="lazy" width="120" height="120">
+
+						</picture>
+
+					</a>
+
+					<div class="cart__item-content">
+
+						<a href="/" class="cart__item-title">
+							Смартфон Xiaomi Redmi Note 9Pro 128GB/6GB Gray (Серый)
+						</a>
+
+						<div class="cart__item-quantity">
+
+							<span class="quantity">
+
+								<button class="quantity__btn quantity__btn--down button" type="button" aria-label="уменьшить количество на одну штуку"></button>
+
+								<input type="tel" value="2" class="quantity__count input" maxlength="3">
+
+								<input type="hidden" value="363" class="quantity__id">
+								<input type="hidden" value="10000" class="quantity__price">
+
+								<button class="quantity__btn quantity__btn--up button" type="button" aria-label="увеличить количество на одну штуку"></button>
+
+							</span>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<table class="cart__item-data">
+
+					<tr>
+
+						<th>
+							Наличие
+						</th>
+
+						<td>
+							<span class="cart__item-availability">
+								В наличии
+							</span>
+						</td>
+
+					</tr>
+
+					<tr>
+
+						<th class="cart__item-key">
+							Стоимость
+						</th>
+
+						<td>
+							10 000 р.
+						</td>
+
+					</tr>
+
+					<tr>
+
+						<th class="cart__item-key">
+							Сумма
+						</th>
+
+						<td>
+							<b><span class="cart__item-price cart__item-price--total">20 000</span> р.</b>
+						</td>
+
+					</tr>
+
+				</table>
+
+				<hr>
+
+				<button class="btn btn--remove cart__item-remove" type="button">
+					<svg width="20" height="20" viewBox="0 0 512 512">
+						<path d="M156.37 30.9h85.57v14.4h30.9V28.9A28.91 28.91 0 00243.97 0h-89.63a28.92 28.92 0 00-28.88 28.9v16.4h30.91zm0 0M344.21 167.75H54.11a13.6 13.6 0 00-13.57 14.7l24.25 299.91A32.21 32.21 0 0096.89 512h204.54a32.21 32.21 0 0032.09-29.64l24.25-299.9a13.6 13.6 0 00-13.56-14.71zM124.35 480.01l-.97.03c-8.1 0-14.9-6.3-15.4-14.5l-15.2-246.2a15.45 15.45 0 0130.84-1.91l15.2 246.2a15.45 15.45 0 01-14.47 16.38zm90.43-15.42a15.45 15.45 0 01-30.9 0V218.38a15.45 15.45 0 1130.9 0zm90.76-245.3l-14.51 246.2a15.45 15.45 0 11-30.85-1.81l14.5-246.21a15.46 15.46 0 0130.85 1.82zm0 0M397.65 120.06L387.5 89.64a19.65 19.65 0 00-18.64-13.43H29.45A19.65 19.65 0 0010.8 89.64L.66 120.06a12.73 12.73 0 0012.1 16.78h372.8c2.51 0 4.81-.73 6.74-1.95a12.73 12.73 0 005.35-14.83zm0 0"/>
+					</svg>
+					Удалить
+				</button>
+
+			</div>
+
+			<div class="cart__item">
+
+				<div class="cart__item-box">
+
+					<a href="/" class="cart__item-img">
+
+						<picture>
+
+							<source srcset="/img/card-preview/f9210dbaaf7b338e6d8d2bdbdba84b96--120x120.webp 1x, /img/card-preview/f9210dbaaf7b338e6d8d2bdbdba84b96--240x240.webp 2x" type="image/webp">
+							<source srcset="/img/card-preview/f9210dbaaf7b338e6d8d2bdbdba84b96--120x120.jpg 1x, /img/card-preview/f9210dbaaf7b338e6d8d2bdbdba84b96--240x240.jpg 2x">
+
+							<img src="/img/card-preview/f9210dbaaf7b338e6d8d2bdbdba84b96--120x120.jpg" alt="Xiaomi Redmi Note 7 6/64GB Twilight Gold" loading="lazy" width="120" height="120">
+
+						</picture>
+
+					</a>
+
+					<div class="cart__item-content">
+
+						<a href="/" class="cart__item-title">
+							Смартфон Xiaomi Redmi Note 9Pro 128GB/6GB Gray (Серый)
+						</a>
+
+						<div class="cart__item-quantity">
+
+							<span class="quantity">
+
+								<button class="quantity__btn quantity__btn--down button" type="button" aria-label="уменьшить количество на одну штуку"></button>
+
+								<input type="tel" value="1" class="quantity__count input" maxlength="3">
+
+								<input type="hidden" value="364" class="quantity__id">
+								<input type="hidden" value="19290" class="quantity__price">
+
+								<button class="quantity__btn quantity__btn--up button" type="button" aria-label="увеличить количество на одну штуку"></button>
+
+							</span>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<table class="cart__item-data">
+
+					<tr>
+
+						<th>
+							Наличие
+						</th>
+
+						<td>
+							<span class="cart__item-availability">
+								В наличии
+							</span>
+						</td>
+
+					</tr>
+
+					<tr>
+
+						<th class="cart__item-key">
+							Стоимость
+						</th>
+
+						<td>
+							19 290 р.
+						</td>
+
+					</tr>
+
+					<tr>
+
+						<th class="cart__item-key">
+							Сумма
+						</th>
+
+						<td>
+							<b><span class="cart__item-price cart__item-price--total">19 290</span> р.</b>
+						</td>
+
+					</tr>
+
+				</table>
+
+				<hr>
+
+				<button class="btn btn--remove cart__item-remove" type="button">
+					<svg width="20" height="20" viewBox="0 0 512 512">
+						<path d="M156.37 30.9h85.57v14.4h30.9V28.9A28.91 28.91 0 00243.97 0h-89.63a28.92 28.92 0 00-28.88 28.9v16.4h30.91zm0 0M344.21 167.75H54.11a13.6 13.6 0 00-13.57 14.7l24.25 299.91A32.21 32.21 0 0096.89 512h204.54a32.21 32.21 0 0032.09-29.64l24.25-299.9a13.6 13.6 0 00-13.56-14.71zM124.35 480.01l-.97.03c-8.1 0-14.9-6.3-15.4-14.5l-15.2-246.2a15.45 15.45 0 0130.84-1.91l15.2 246.2a15.45 15.45 0 01-14.47 16.38zm90.43-15.42a15.45 15.45 0 01-30.9 0V218.38a15.45 15.45 0 1130.9 0zm90.76-245.3l-14.51 246.2a15.45 15.45 0 11-30.85-1.81l14.5-246.21a15.46 15.46 0 0130.85 1.82zm0 0M397.65 120.06L387.5 89.64a19.65 19.65 0 00-18.64-13.43H29.45A19.65 19.65 0 0010.8 89.64L.66 120.06a12.73 12.73 0 0012.1 16.78h372.8c2.51 0 4.81-.73 6.74-1.95a12.73 12.73 0 005.35-14.83zm0 0"/>
+					</svg>
+					Удалить
+				</button>
+
+			</div>
+
+			<div class="cart__next">
+
+				<p class="h1">
+					Всего товаров: <span class="cart__total-items">2</span>
+				</p>
+
+				<p class="h1">
+					Сумма заказа: <span class="cart__total">19 290</span> р.
+				</p>
+
+				<button class="btn cart__btn">
+					Оформить заказ
+				</button>
+
+			</div>
+
+		</form>
+
+	</section>
+
+{% endblock %}

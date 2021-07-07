@@ -1,0 +1,59 @@
+.pagin {
+
+	margin: 40px -15px;
+	padding: 20px 10px;
+	position: relative;
+	display: flex;
+	box-shadow: var(--shadow);
+
+	@media ($tablet) {
+
+		padding: 20px 15px;
+		margin: 40px -20px;
+
+	}
+
+	&__item {
+
+		flex-grow: 1;
+		flex-shrink: 0;
+		width: 25px;
+
+		&--arrow {
+
+			flex-grow: 0;
+
+		}
+
+		&--current {
+
+			pointer-events: none;
+
+			&::after {
+
+				position: absolute;
+				height: 4px;
+				left: 0;
+				right: 0;
+				bottom: -20px;
+				content: '';
+				background-color: var(--orange);
+
+			}
+
+		}
+
+	}
+
+	&__link {
+
+		display: flex;
+		height: 25px;
+		font-size: 22px;
+		line-height: 25px;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+}

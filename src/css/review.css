@@ -1,0 +1,130 @@
+.review {
+
+	margin: 30px 0;
+	position: relative;
+
+	#review {
+
+		position: absolute;
+		left: 0;
+		top: calc((var(--heightHeader) * -1) - 20px);
+
+	}
+
+	&__title {
+
+		line-height: 36px;
+
+	}
+
+	&__write {
+
+		position: absolute;
+		top: 0;
+		right: 0;
+
+	}
+
+	&__item {
+
+		margin-top: 14px;
+		border-top: 1px solid #e3e3e3;
+		padding-top: 14px;
+
+		& + & {
+
+			margin-top: 20px;
+
+		}
+
+	}
+
+	&__autor {
+
+		font-size: 14px;
+		font-weight: 700;
+
+	}
+
+	&__date {
+
+		color: var(--text);
+		font-size: 11px;
+
+	}
+
+	&__stars {
+
+		margin: 10px 0;
+
+	}
+
+	&__body {
+
+		&-item {
+
+			padding-left: 24px;
+			font-size: 9px;
+			line-height: 14px;
+			margin: 10px 0;
+			background-repeat: no-repeat;
+			background-position: 0 2px;
+
+			dt {
+
+				display: block;
+				font-size: 12px;
+				line-height: 18px;
+				font-weight: 700;
+
+			}
+
+			&--plus {
+
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cline x1='0' y1='7' x2='14' y2='7' stroke='%23aaa'/%3E%3Cline x1='7' y1='0' x2='7' y2='14' stroke='%23aaa'/%3E%3C/svg%3E");
+
+			}
+
+			&--minus {
+
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cline x1='0' y1='7' x2='14' y2='7' stroke='%23aaa'/%3E%3C/svg%3E");
+
+			}
+
+			&--text {
+
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23aaa' width='20' height='18' viewBox='0 0 20 18'%3E%3Cpath d='M16.88 0H2.69A2.69 2.69 0 000 2.69v8.68a2.69 2.69 0 002.68 2.69V18l5.66-3.94h8.53a2.69 2.69 0 002.69-2.69V2.69A2.69 2.69 0 0016.88 0zm1.54 11.37a1.55 1.55 0 01-1.54 1.54H8l-4.17 2.9v-2.9H2.69a1.55 1.55 0 01-1.54-1.54V2.69a1.55 1.55 0 011.54-1.54h14.19a1.55 1.55 0 011.54 1.54z'%3E%3C/path%3E%3Cpath d='M5.24 4.05h9.09V5.2H5.24zM5.24 6.5h9.09v1.14H5.24zM5.24 8.94h9.09v1.15H5.24z'%3E%3C/path%3E%3C/svg%3E");
+				background-size: 18px auto;
+
+			}
+
+		}
+
+	}
+
+	&__footer {
+
+		display: flex;
+		align-items: center;
+		border: 1px solid #e8e8e8;
+		border-radius: 5px;
+		padding: 5px 15px;
+		margin-top: 20px;
+
+		&-label {
+
+			font-size: 12px;
+			padding-right: 10px;
+
+		}
+
+		.btn {
+
+			margin-right: 5px;
+
+		}
+
+	}
+
+
+}

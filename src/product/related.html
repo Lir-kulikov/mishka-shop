@@ -1,0 +1,33 @@
+	<section class="card-swiper swiper-container-style">
+
+		<div class="card-swiper__title">
+
+			<h2 class="h1">
+				Похожие товары
+			</h2>
+
+		</div>
+
+		<div class="card-swiper__wrap">
+
+			<div class="swiper-container swiper-container--card swiper-container--navigation">
+
+				<ul class="card-swiper__list swiper-wrapper">
+
+{% for item in [1,2,3,4,5] %}
+
+					<li class="card-swiper__item swiper-slide">
+
+{% include "_include/card-preview.html" %}
+
+					</li>
+
+{% endfor %}
+
+				</ul>
+
+			</div>
+
+		</div>
+
+	</section>
