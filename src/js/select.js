@@ -19,3 +19,17 @@
 	});
 
 })(document.querySelectorAll('.select'));
+
+
+document.addEventListener('DOMContentLoaded', () => {
+	const elements = document.querySelectorAll('.js-choice');
+
+	elements && elements.length && elements.forEach(el => {
+		const choice = new Choices(el, {
+			searchEnabled: false,
+		});
+		console.log(el);
+	});
+
+
+})
